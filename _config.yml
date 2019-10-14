@@ -1,1 +1,6 @@
+title: Cowtan Blog
+markdown: kramdown
 theme: jekyll-theme-midnight
+include: [_posts]
+plugins:
+  - jekyll-feed
