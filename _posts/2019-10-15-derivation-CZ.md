@@ -38,7 +38,7 @@ If we measure a $$\langle 1 \mid$$ state on the ancilla qubit, we instead have a
 
 ![line_3](/assets/line3.png)
 
-Lastly, we would like to reduce the computation cost by trimming down the $$T$$-count. To do this, note that at the very start of our derivation we could have pulled out a controlled-$$S^{\dagger}$$ gate from the controlled-$$Z^a$$, changing the coefficient of our H-box accordingly. When we perform the rest of the derivation, we get an additional $$S$$-gate on the ancilla. This gives the Toffoli* gate, as demonstrated in equation 6 of [^10], and therefore we have completed the derivation.
+Lastly, we would like to reduce the computation cost by trimming down the $$T$$-count. To do this, note that at the very start of our derivation we could have pulled out a $$CS^{\dagger}$$ gate from the $$CZ^a$$, changing the coefficient of our H-box accordingly. When we perform the rest of the derivation, we get an additional $$S$$-gate on the ancilla. This gives the Toffoli* gate, as demonstrated in equation 6 of [^10], and therefore we have completed the derivation.
 
 So we have proved, with relative ease and only using a fraction of the available axioms, this nice result and reduced the required $$T$$-count significantly, as the alternative would be to decompose the controlled-$$Z^a$$ gate naively. Why is this interesting? Well, the ZH-calculus hasn't been used yet to prove any new results for quantum controlled gates, but the ease with which you can derive the current state-of-the-art results gives me hope that there is relatively low-hanging fruit out there.
 
