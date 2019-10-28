@@ -34,13 +34,11 @@ We have pulled the angle from the H-box into an X-spider, using rules HS1, ZS2 a
 
 This can all be performed using the ZS1 rule and the definition of the 2-arity Hadamard in traditional ZX-calculus. This diagram is equivalent to a Toffoli gate acting on an ancilla prepared in the $$\mid 0\rangle$$ state. However, there are two problems. Firstly, we have postselected the ancilla measurement to be in the $$\langle 0 \mid$$ state. Secondly, the Toffoli gate will require 6 $$T$$-gates to perform [^11]. Let's fix the postselection problem first.
 
-If we measure a $$\langle 1 \mid$$ state on the ancilla qubit, we instead have a $$\pi$$ rotation on the last X-spider and we must apply a correction. Following the same rules as in equation 9 of [^10], we get a controlled $$CZ$$-gate, dependent on the measurement outcome of our ancilla. This must be applied here, rather than having, for example, an $$X$$ gate on the ancilla, so that the correction gate can be in the causal future of our measurement.
+If we measure a $$\langle 1 \mid$$ state on the ancilla qubit, we instead have a $$\pi$$ rotation on the last X-spider and we must apply a correction. Following the same rules as in equation 9 of [^10], we get a classically controlled $$CZ$$-gate, dependent on the measurement outcome of our ancilla. This must be applied here, rather than having, for example, an $$X$$ gate on the ancilla, so that the correction gate can be in the causal future of our measurement.
 
 ![line_3](/assets/line3.png)
 
-Lastly, we would like to reduce the computation cost by trimming down the $$T$$-count. To do this, note that we are free to insert a blank 2-arity Z-spider by ZS2. We can split this up into a $$\frac{\pi}{2}$$ Z-spider and its inverse. We can then move the inverse up the Toffoli to give a controlled-$$S^{\dagger}$$ gate. This gives the Toffoli* gate, as demonstrated in equation 6 of [^10], and therefore we have completed the derivation.
-
-![line_4](/assets/line4.png)
+Lastly, we would like to reduce the computation cost by trimming down the $$T$$-count. To do this, note that at the very start of our derivation we could have pulled out a controlled-$$S^{\dagger}$$ gate from the controlled-$$Z^a$$, changing the coefficient of our H-box accordingly. When we perform the rest of the derivation, we get an additional $$S$$-gate on the ancilla. This gives the Toffoli* gate, as demonstrated in equation 6 of [^10], and therefore we have completed the derivation.
 
 So we have proved, with relative ease and only using a fraction of the available axioms, this nice result and reduced the required $$T$$-count significantly, as the alternative would be to decompose the controlled-$$Z^a$$ gate naively. Why is this interesting? Well, the ZH-calculus hasn't been used yet to prove any new results for quantum controlled gates, but the ease with which you can derive the current state-of-the-art results gives me hope that there is relatively low-hanging fruit out there.
 
