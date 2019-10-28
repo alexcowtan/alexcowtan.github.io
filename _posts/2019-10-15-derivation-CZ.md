@@ -32,7 +32,7 @@ We have pulled the angle from the H-box into an X-spider, using rules HS1, ZS2 a
 
 ![line_2](/assets/line2.png)
 
-This can all be performed using the ZS1 rule and the definition of the 2-arity Hadamard in traditional ZX-calculus. This diagram is equivalent to a Toffoli gate acting on an ancilla prepared in the $$\mid 0\rangle$$ state. However, there are two problems. Firstly, we have postselected the ancilla measurement to be in the $$\langle 0 \mid$$ state. Secondly, the Toffoli gate will require 6 $$T$$-gates to perform [^11]. Let's fix the postselection problem first.
+This can all be performed using the ZS1 rule and the definition of the 2-arity Hadamard in traditional ZX-calculus. This diagram is equivalent to a Toffoli gate acting on an ancilla prepared in the $$\mid 0\rangle$$ state. However, there are two problems. Firstly, we have postselected the ancilla measurement to be in the $$\langle 0 \mid$$ state. Secondly, the Toffoli gate will require 7 $$T$$-gates to perform [^11]. Let's fix the postselection problem first.
 
 If we measure a $$\langle 1 \mid$$ state on the ancilla qubit, we instead have a $$\pi$$ rotation on the last X-spider and we must apply a correction. Following the same rules as in equation 9 of [^10], we get a classically controlled $$CZ$$-gate, dependent on the measurement outcome of our ancilla. This must be applied here, rather than having, for example, an $$X$$ gate on the ancilla, so that the correction gate can be in the causal future of our measurement.
 
