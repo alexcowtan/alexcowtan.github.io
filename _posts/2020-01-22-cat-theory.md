@@ -10,7 +10,7 @@ There have recently been discussions on Twitter about whether Applied Category T
 I will now give a list of examples where category theory has been used in the process of deriving or computing practically applicable results in quantum information. All of these come from the body of work related to the ZX-calculus [^7].
 
 1. Deriving and verifying error correction codes [^8].
-2. Reducing Clifford circuits to have the minimal number of layers of two-qubit gates [^9].
+2. Reducing Clifford circuits to have the smallest known number of layers of two-qubit gates [^9].
 3. T-count optimisation [^10] [^11].
 4. Deriving techniques for optimising NISQ chemistry circuits [^12].
 5. Deriving low space-time volume surface code defect braiding results for magic state distillation (and other benchmarks) [^13].
