@@ -5,7 +5,7 @@ date:   2020-01-22
 
 # On the successes of Applied Category Theory, and in particular graphical calculi, in quantum computing
 
-There have recently been discussions on Twitter about whether Applied Category Theory (ACT) has actually had much success in the "Real World". There have been conversations about its application to logic, type theory, geometry and some extremely theoretical physics, but these are already well-known, and depending on your definition of "Applied" the results of these may not be "Real World" enough. There are also people working on compositional neural networks [^5], databases [^6], lenses for game theory [^1], pregroups for linguistics [^2], PROPs for signal flow graphs [^3] and lots of other stuff [^4].
+There have recently been discussions on Twitter about whether Applied Category Theory (ACT) has actually had much success in the "Real World". There have been conversations about its application to logic, type theory, pure maths (topology, homotopy theory, algebraic geometry) and some extremely theoretical physics, but these are already well-known, and depending on your definition of "Applied" the results of these may not be "Real World" enough. There are also people working on compositional neural networks [^5], databases [^6], lenses for game theory [^1], pregroups for linguistics [^2], PROPs for signal flow graphs [^3] and lots of other stuff [^4].
 
 I will now give a list of examples where category theory has been used in the process of deriving or computing practically applicable results in quantum information. All of these come from the body of work related to the ZX-calculus [^7].
 
